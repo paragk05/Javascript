@@ -1,0 +1,95 @@
+<script>
+console.log("Hello");
+
+var p= [[5,"parag"],[8,"mir"]]
+
+p.unshift([5,"ppp"]);
+
+for(var i=0;i<p.length;i++)
+console.log(p[i]);
+
+function ppp()
+{
+    console.log("In function");
+}
+
+ppp();
+
+function ppp1(a,b)
+{
+    p.push(a)
+
+    return b;
+}
+
+console.log("Before :"+JSON.stringify(p));
+ppp1([2,"pr"],5);
+console.log("After :"+JSON.stringify(p));
+
+var letter="e"
+
+switch(letter)
+{
+    case "a":case "e":case "i":case "o":case "u": console.log("Vovel");break;
+
+    default: console.log("Consonent");
+}
+
+
+function pi(a,b)
+{
+    return a<b;
+}
+
+console.log(pi(5,3));
+
+var obj= {
+    "lid":4,
+    "lname": "p"
+};
+
+function yyy(check)
+{
+    if(obj.hasOwnProperty(check))
+    {
+        return obj[check];
+    }
+    else
+    {
+        return "Not a Property";
+    }
+}
+console.log(obj.lid);
+console.log(yyy("lib"));
+
+
+function ooo(u)
+{
+    return parseInt(u,7);
+}
+
+console.log(ooo("1110"));
+
+
+var t=0;
+
+function ii()
+{
+    console.log(t++);
+    
+}
+
+console.log(t);
+t++;
+console.log(ii());
+
+const life={
+    "hope" : "abandoned",
+    "work" : "harder"
+}
+
+const death= `The hope is ${life.hope} So we have to work ${life.work}
+to make everything okay..`;
+
+console.log(death);
+</script>
